@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHp-wF-CME">
+                                <rect key="frame" x="36" y="368" width="100" height="100"/>
+                                <state key="normal" image="100higasiyamato.png"/>
+                                <connections>
+                                    <action selector="circleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BeV-KD-H4r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qds-ga-H0a">
+                                <rect key="frame" x="184" y="368" width="100" height="100"/>
+                                <state key="normal" image="100cyuouku.png"/>
+                                <connections>
+                                    <action selector="crossButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Led-KW-Sm7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="問題が表示される" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gjj-CC-H2L">
+                                <rect key="frame" x="36" y="105" width="248" height="213"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kHp-wF-CME" firstAttribute="top" secondItem="Gjj-CC-H2L" secondAttribute="bottom" constant="50" id="02Y-ES-Zfv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qds-ga-H0a" secondAttribute="bottom" constant="100" id="259-LD-VHe"/>
+                            <constraint firstAttribute="trailing" secondItem="qds-ga-H0a" secondAttribute="trailing" constant="36" id="7oC-tI-2rR"/>
+                            <constraint firstItem="qds-ga-H0a" firstAttribute="top" secondItem="Gjj-CC-H2L" secondAttribute="bottom" constant="50" id="M3h-iz-Nu8"/>
+                            <constraint firstAttribute="trailing" secondItem="Gjj-CC-H2L" secondAttribute="trailing" constant="36" id="St5-Q6-pYW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kHp-wF-CME" secondAttribute="bottom" constant="100" id="TPo-ua-pz2"/>
+                            <constraint firstItem="Gjj-CC-H2L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="dSx-nt-bZa"/>
+                            <constraint firstItem="kHp-wF-CME" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="rV5-nv-vHQ"/>
+                            <constraint firstItem="Gjj-CC-H2L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="x4t-56-qxx"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="problem" destination="Gjj-CC-H2L" id="1KF-pR-prF"/>
+                        <segue destination="kmk-ck-hhw" kind="presentation" identifier="connect" id="Hh1-Hp-sTs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="308"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="m67-BE-7eO">
+            <objects>
+                <viewController id="kmk-ck-hhw" customClass="resultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9kO-nK-yI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="9dH-m6-bQr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YQp-6w-dPe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="回答結果" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-PY-pe9">
+                                <rect key="frame" x="36" y="105" width="248" height="233"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-Lx-0nn">
+                                <rect key="frame" x="125" y="428" width="70" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="returnButton:" destination="kmk-ck-hhw" eventType="touchUpInside" id="ciP-gd-zhS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ac2-PY-pe9" firstAttribute="leading" secondItem="YQp-6w-dPe" secondAttribute="leading" constant="36" id="Omv-ff-nYG"/>
+                            <constraint firstAttribute="trailing" secondItem="Ac2-PY-pe9" secondAttribute="trailing" constant="36" id="SnV-V3-IJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="qWR-Lx-0nn" secondAttribute="trailing" constant="125" id="Wl1-kc-1o8"/>
+                            <constraint firstItem="qWR-Lx-0nn" firstAttribute="leading" secondItem="YQp-6w-dPe" secondAttribute="leading" constant="125" id="gh5-KI-rez"/>
+                            <constraint firstItem="qWR-Lx-0nn" firstAttribute="top" secondItem="Ac2-PY-pe9" secondAttribute="bottom" constant="90" id="hes-CO-p1Z"/>
+                            <constraint firstItem="Ac2-PY-pe9" firstAttribute="top" secondItem="9kO-nK-yI6" secondAttribute="bottom" constant="85" id="riE-54-hPY"/>
+                            <constraint firstItem="9dH-m6-bQr" firstAttribute="top" secondItem="qWR-Lx-0nn" secondAttribute="bottom" constant="110" id="wap-hf-Wje"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hx4-89-EtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="100cyuouku.png" width="100" height="100"/>
+        <image name="100higasiyamato.png" width="100" height="100"/>
+    </resources>
+</document>
