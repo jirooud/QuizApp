@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F300E1AB1C2EBB6200D64F71 /* 100chiyodaku.png in Resources */ = {isa = PBXBuildFile; fileRef = F300E1A91C2EBB6200D64F71 /* 100chiyodaku.png */; };
+		F300E1AC1C2EBB6200D64F71 /* 100cyuouku.png in Resources */ = {isa = PBXBuildFile; fileRef = F300E1AA1C2EBB6200D64F71 /* 100cyuouku.png */; };
+		F300E1AE1C2EBB6E00D64F71 /* cyoufu.png in Resources */ = {isa = PBXBuildFile; fileRef = F300E1AD1C2EBB6E00D64F71 /* cyoufu.png */; };
+		F300E1B01C2EBBCE00D64F71 /* 100higasiyamato.png in Resources */ = {isa = PBXBuildFile; fileRef = F300E1AF1C2EBBCE00D64F71 /* 100higasiyamato.png */; };
 		F3108C5C1C251A52007EA0DE /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3108C5B1C251A52007EA0DE /* resultViewController.m */; };
 		F3FCB5E41C23CEC300BD9BC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FCB5E31C23CEC300BD9BC2 /* main.m */; };
 		F3FCB5E71C23CEC300BD9BC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FCB5E61C23CEC300BD9BC2 /* AppDelegate.m */; };
@@ -14,12 +18,13 @@
 		F3FCB5ED1C23CEC300BD9BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5EB1C23CEC300BD9BC2 /* Main.storyboard */; };
 		F3FCB5EF1C23CEC300BD9BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5EE1C23CEC300BD9BC2 /* Assets.xcassets */; };
 		F3FCB5F21C23CEC300BD9BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5F01C23CEC300BD9BC2 /* LaunchScreen.storyboard */; };
-		F3FCB5FC1C23CFA900BD9BC2 /* 100cyuouku.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5F91C23CFA900BD9BC2 /* 100cyuouku.png */; };
-		F3FCB5FD1C23CFA900BD9BC2 /* 100higasiyamato.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5FA1C23CFA900BD9BC2 /* 100higasiyamato.png */; };
-		F3FCB5FE1C23CFA900BD9BC2 /* cyoufu.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5FB1C23CFA900BD9BC2 /* cyoufu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F300E1A91C2EBB6200D64F71 /* 100chiyodaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100chiyodaku.png; sourceTree = "<group>"; };
+		F300E1AA1C2EBB6200D64F71 /* 100cyuouku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100cyuouku.png; sourceTree = "<group>"; };
+		F300E1AD1C2EBB6E00D64F71 /* cyoufu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cyoufu.png; sourceTree = "<group>"; };
+		F300E1AF1C2EBBCE00D64F71 /* 100higasiyamato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100higasiyamato.png; sourceTree = "<group>"; };
 		F3108C5A1C251A52007EA0DE /* resultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultViewController.h; sourceTree = "<group>"; };
 		F3108C5B1C251A52007EA0DE /* resultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultViewController.m; sourceTree = "<group>"; };
 		F3FCB5DF1C23CEC300BD9BC2 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,9 +37,6 @@
 		F3FCB5EE1C23CEC300BD9BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FCB5F11C23CEC300BD9BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FCB5F31C23CEC300BD9BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3FCB5F91C23CFA900BD9BC2 /* 100cyuouku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 100cyuouku.png; path = "../../../sozai/techacademy/tokyo_icon/名称変更/100cyuouku.png"; sourceTree = "<group>"; };
-		F3FCB5FA1C23CFA900BD9BC2 /* 100higasiyamato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 100higasiyamato.png; path = "../../../sozai/techacademy/tokyo_icon/名称変更/100higasiyamato.png"; sourceTree = "<group>"; };
-		F3FCB5FB1C23CFA900BD9BC2 /* cyoufu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cyoufu.png; path = "../../../sozai/techacademy/tokyo_icon/名称変更/cyoufu.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,10 @@
 			children = (
 				F3FCB5E11C23CEC300BD9BC2 /* QuizApp */,
 				F3FCB5E01C23CEC300BD9BC2 /* Products */,
-				F3FCB5F91C23CFA900BD9BC2 /* 100cyuouku.png */,
-				F3FCB5FA1C23CFA900BD9BC2 /* 100higasiyamato.png */,
-				F3FCB5FB1C23CFA900BD9BC2 /* cyoufu.png */,
+				F300E1A91C2EBB6200D64F71 /* 100chiyodaku.png */,
+				F300E1AA1C2EBB6200D64F71 /* 100cyuouku.png */,
+				F300E1AF1C2EBBCE00D64F71 /* 100higasiyamato.png */,
+				F300E1AD1C2EBB6E00D64F71 /* cyoufu.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FCB5F21C23CEC300BD9BC2 /* LaunchScreen.storyboard in Resources */,
-				F3FCB5FD1C23CFA900BD9BC2 /* 100higasiyamato.png in Resources */,
-				F3FCB5FE1C23CFA900BD9BC2 /* cyoufu.png in Resources */,
+				F300E1AB1C2EBB6200D64F71 /* 100chiyodaku.png in Resources */,
+				F300E1AE1C2EBB6E00D64F71 /* cyoufu.png in Resources */,
 				F3FCB5EF1C23CEC300BD9BC2 /* Assets.xcassets in Resources */,
+				F300E1AC1C2EBB6200D64F71 /* 100cyuouku.png in Resources */,
 				F3FCB5ED1C23CEC300BD9BC2 /* Main.storyboard in Resources */,
-				F3FCB5FC1C23CFA900BD9BC2 /* 100cyuouku.png in Resources */,
+				F300E1B01C2EBBCE00D64F71 /* 100higasiyamato.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
