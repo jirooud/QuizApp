@@ -42,7 +42,6 @@ NSTimer *timer;
 }
 
 -(void)indication{
-    //ここに何か足すと良いのかな？
     [self collection];
 }
 
