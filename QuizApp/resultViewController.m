@@ -34,8 +34,14 @@
 }
 */
 
-//初期化させる
+//初期化させるdismiss
 - (IBAction)returnButton:(id)sender {
     NSLog(@"戻るボタン");
+    [self dismissResultView];
 }
+
+- (void)dismissResultView {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

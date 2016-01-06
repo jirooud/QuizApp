@@ -17,6 +17,7 @@ NSTimer *timer;
     NSInteger questionNumber;
     NSInteger correctCount;
     BOOL answer;
+    BOOL isAnswerButtonsEnable;
 }
 
 @end
@@ -27,13 +28,12 @@ NSTimer *timer;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     numberAry = [NSMutableArray array];
+    isAnswerButtonsEnable = YES;
     //配列に発生させたい範囲の乱数を格納する。
     for (int i = 0; i < 10; i++){
         [numberAry addObject:[NSString stringWithFormat:@"%d",i]];
-        
-    //[self indication];
-
     }
+    [self indication];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +47,7 @@ NSTimer *timer;
 
 
 - (void)oneSecond:(NSTimer*)timer{
-    //self.problem.text = @"正解";
+    isAnswerButtonsEnable = YES;
     [self nextQuiz];
 }
 
@@ -117,44 +117,33 @@ NSTimer *timer;
 //ボタンの画像はあとで変える
 - (IBAction)circleButton:(id)sender {
     NSLog(@"マルボタン");
-    
+    if (isAnswerButtonsEnable) {
+        isAnswerButtonsEnable = NO;
     if (answer ==YES){
         correctCount++;
         self.problem.text = @"正解";
-        timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
-        //[self nextQuiz];
-        //[self trueAnswer];
-    //quizCount++;
-        
-        }else{
-            self.problem.text = @"不正解";
-            timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
-            
-    //[self nextQuiz];
-        //[self falseAnswer];
-    //[self nextQuiz];
-        }
-
+    }else{
+        self.problem.text = @"不正解";
+    }
+        [self startTimer];
+    }
 }
 
 - (IBAction)crossButton:(id)sender {
     NSLog(@"バツボタン");
-    
+    if (isAnswerButtonsEnable) {
+        isAnswerButtonsEnable = NO;
     if (answer ==NO){
         correctCount++;
         self.problem.text = @"正解";
-        timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
-        //[self nextQuiz];
-        //[self trueAnswer];
-    //quizCount++;
-        
-        }else{
-            self.problem.text = @"不正解";
-            timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
-            //[self nextQuiz];
-        
-    //[self falseAnswer];
-    //[self nextQuiz];
-        }
+    }else{
+        self.problem.text = @"不正解";
+    }
+        [self startTimer];
+    }
+}
+
+- (void)startTimer{
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
 }
 @end
