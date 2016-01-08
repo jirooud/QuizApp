@@ -10,6 +10,10 @@
 
 @interface resultViewController : UIViewController
 
+@property NSInteger response;
+
+@property (weak, nonatomic) IBOutlet UITextView *result;
+
 - (IBAction)returnButton:(id)sender;
 
 @end

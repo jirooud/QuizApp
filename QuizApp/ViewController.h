@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
+
+@property NSString *receiveString;//
 
 @property (weak, nonatomic) IBOutlet UITextView *problem;
 

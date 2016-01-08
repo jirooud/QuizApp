@@ -18,6 +18,8 @@
 		F3FCB5ED1C23CEC300BD9BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5EB1C23CEC300BD9BC2 /* Main.storyboard */; };
 		F3FCB5EF1C23CEC300BD9BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5EE1C23CEC300BD9BC2 /* Assets.xcassets */; };
 		F3FCB5F21C23CEC300BD9BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCB5F01C23CEC300BD9BC2 /* LaunchScreen.storyboard */; };
+		F3FD9DED1C3F25E800B79D8A /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FD9DEC1C3F25E800B79D8A /* batsu.png */; };
+		F3FD9DEF1C3F270800B79D8A /* maru2.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FD9DEE1C3F270800B79D8A /* maru2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		F3FCB5EE1C23CEC300BD9BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FCB5F11C23CEC300BD9BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FCB5F31C23CEC300BD9BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FD9DEC1C3F25E800B79D8A /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
+		F3FD9DEE1C3F270800B79D8A /* maru2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				F3FCB5E11C23CEC300BD9BC2 /* QuizApp */,
 				F3FCB5E01C23CEC300BD9BC2 /* Products */,
+				F3FD9DEE1C3F270800B79D8A /* maru2.png */,
+				F3FD9DEC1C3F25E800B79D8A /* batsu.png */,
 				F300E1A91C2EBB6200D64F71 /* 100chiyodaku.png */,
 				F300E1AA1C2EBB6200D64F71 /* 100cyuouku.png */,
 				F300E1AF1C2EBBCE00D64F71 /* 100higasiyamato.png */,
@@ -153,6 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FD9DEF1C3F270800B79D8A /* maru2.png in Resources */,
+				F3FD9DED1C3F25E800B79D8A /* batsu.png in Resources */,
 				F3FCB5F21C23CEC300BD9BC2 /* LaunchScreen.storyboard in Resources */,
 				F300E1AB1C2EBB6200D64F71 /* 100chiyodaku.png in Resources */,
 				F300E1AE1C2EBB6E00D64F71 /* cyoufu.png in Resources */,
