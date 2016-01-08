@@ -10,8 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property NSString *receiveString;//
-
 @property (weak, nonatomic) IBOutlet UITextView *problem;
 
 - (IBAction)circleButton:(id)sender;
