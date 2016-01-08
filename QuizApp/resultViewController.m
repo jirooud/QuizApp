@@ -44,7 +44,7 @@
             self.result.text = @"4問正解";
             break;
         case 5:
-            self.result.text = @"5問正解";
+            self.result.text = @"全問正解";
             break;
     }
 }
