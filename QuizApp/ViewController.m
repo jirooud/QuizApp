@@ -68,7 +68,6 @@ NSTimer *timer;
     if ([[segue identifier] isEqualToString:@"connect"]) {
         resultViewController *resultViewController = [segue destinationViewController];
         resultViewController.response = correctCount;
-        
     }
 }
 
