@@ -59,7 +59,6 @@
 }
 */
 
-//初期化させるdismiss
 - (IBAction)returnButton:(id)sender {
     NSLog(@"戻るボタン");
     [self dismissViewControllerAnimated:YES completion:nil];

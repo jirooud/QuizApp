@@ -42,16 +42,18 @@ NSTimer *timer;
     // Dispose of any resources that can be recreated.
 }
 
+//最初の問題表示
 - (void)indication{
     [self collection];
 }
 
+//ボタン再有効
 - (void)oneSecond:(NSTimer*)timer{
     isAnswerButtonsEnable = YES;
     [self nextQuiz];
 }
 
-//次のクイズ
+//次のクイズと5問終えたらresultViewに移動
 - (void)nextQuiz{
     quizCount++;
     if(quizCount < totalQuiz){
@@ -64,6 +66,7 @@ NSTimer *timer;
     }
 }
 
+//resultViewに数値を渡す
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"connect"]) {
         resultViewController *resultViewController = [segue destinationViewController];
@@ -121,6 +124,7 @@ NSTimer *timer;
     }
 }
 
+//マルボタンとボタン連打防止
 - (IBAction)circleButton:(id)sender {
     NSLog(@"マルボタン");
     if (isAnswerButtonsEnable) {
@@ -135,6 +139,7 @@ NSTimer *timer;
     }
 }
 
+//バツボタンとボタン連打防止
 - (IBAction)crossButton:(id)sender {
     NSLog(@"バツボタン");
     if (isAnswerButtonsEnable) {
@@ -149,6 +154,7 @@ NSTimer *timer;
     }
 }
 
+//正解不正解表示時間
 - (void)startTimer{
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(oneSecond:)userInfo:nil repeats:NO];
 }
