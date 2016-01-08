@@ -122,7 +122,6 @@ NSTimer *timer;
     }
 }
 
-//ボタンの画像はあとで変える
 - (IBAction)circleButton:(id)sender {
     NSLog(@"マルボタン");
     if (isAnswerButtonsEnable) {

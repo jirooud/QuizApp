@@ -8,9 +8,7 @@
 
 #import "resultViewController.h"
 
-@interface resultViewController (){
-    NSInteger kari;
-}
+@interface resultViewController ()
 
 @end
 
@@ -28,27 +26,25 @@
 }
 
 - (void)resultViewText{
-    switch(kari){
+    NSLog(@"%d",(int)_response);
+    switch(_response){
         case 0:
-            self.result.text = [NSString stringWithFormat:@"%d", _response];
+            self.result.text = @"全問不正解";
             break;
-        //case 0:
-            //self.result.text = @"全問不正解";
-            //break;
         case 1:
             self.result.text = @"1問正解";
             break;
         case 2:
-            self.result.text = @"結果c";
+            self.result.text = @"2問正解";
             break;
         case 3:
-            self.result.text = @"結果b";
+            self.result.text = @"3問正解";
             break;
         case 4:
-            self.result.text = @"結果e";
+            self.result.text = @"4問正解";
             break;
         case 5:
-            self.result.text = @"結果f";
+            self.result.text = @"5問正解";
             break;
     }
 }
