@@ -37,6 +37,22 @@ NSTimer *timer;
     [self indication];
 }
 
+//戻るボタン後の処理
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear : animated];
+    questionNumber = 0;
+    correctCount = 0;
+    quizCount = 0;
+    numberAry = [NSMutableArray array];
+    isAnswerButtonsEnable = YES;
+    //配列に発生させたい範囲の乱数を格納する。
+    for (int i = 0; i < 10; i++){
+        [numberAry addObject:[NSString stringWithFormat:@"%d",i]];
+    }
+    [self indication];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -25,6 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//正答数表示
 - (void)resultViewText{
     NSLog(@"%d",(int)_response);
     switch(_response){
@@ -59,6 +60,7 @@
 }
 */
 
+//最初に戻る
 - (IBAction)returnButton:(id)sender {
     NSLog(@"戻るボタン");
     [self dismissViewControllerAnimated:YES completion:nil];
