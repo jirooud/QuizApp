@@ -25,27 +25,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-//正答数表示
+//正答率表示
 - (void)resultViewText{
     NSLog(@"%d",(int)_response);
     switch(_response){
         case 0:
-            self.result.text = @"全問不正解";
+            self.result.text = @"正答率0%";
             break;
         case 1:
-            self.result.text = @"1問正解";
+            self.result.text = @"正答率20%";
             break;
         case 2:
-            self.result.text = @"2問正解";
+            self.result.text = @"正答率40%";
             break;
         case 3:
-            self.result.text = @"3問正解";
+            self.result.text = @"正答率60%";
             break;
         case 4:
-            self.result.text = @"4問正解";
+            self.result.text = @"正答率80%";
             break;
         case 5:
-            self.result.text = @"全問正解";
+            self.result.text = @"正答率100%";
             break;
     }
 }
